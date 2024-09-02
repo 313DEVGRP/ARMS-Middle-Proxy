@@ -102,16 +102,6 @@ spring:
             user-info-uri: http://www.313.co.kr/auth/realms/master/protocol/openid-connect/userinfo
             jwk-set-uri: http://www.313.co.kr/auth/realms/master/protocol/openid-connect/certs
             user-name-attribute: preferred_username
-        registration:
-          middle-proxy:
-            scope: openid
-            realm: master
-            server-url: http://www.313.co.kr/auth
-            provider: keycloak
-            client-id: Java-Service-Tree-Framework-Middle-Proxy
-            client-secret: f1011641-e4d4-4dc8-b177-7834fcf7d041
-            authorization-grant-type: authorization_code
-            redirect-uri: "{baseUrl}/login/oauth2/code/middle-proxy"
   main:
     web-application-type: reactive
 
